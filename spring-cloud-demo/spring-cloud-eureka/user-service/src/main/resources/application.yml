@@ -1,0 +1,10 @@
+server:
+  port: 9321
+spring:
+  application:
+    name: user-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9300/eureka/

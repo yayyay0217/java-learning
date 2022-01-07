@@ -1,0 +1,15 @@
+server:
+  port: 9310
+
+spring:
+  application:
+    name: ribbon-consumer
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9300/eureka/
+    registry-fetch-interval-seconds:
+    instance-info-replication-interval-seconds:
+    initial-instance-info-replication-interval-seconds:
+    eureka-service-url-poll-interval-seconds:

@@ -1,0 +1,22 @@
+server:
+  port: 9300
+
+spring:
+  application:
+    name: eureka-service
+
+eureka:
+  instance:
+    hostname: eureka2
+    prefer-ip-address: true
+  client:
+    # 不注册自己
+    register-with-eureka: true
+    # 关闭检索服务
+    fetch-registry: true
+    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://127.0.0.1:9080/eureka/
+
+
+
