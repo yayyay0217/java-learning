@@ -18,6 +18,7 @@ public class CuntomerController {
 
     @GetMapping
     public String test(){
+
        return restTemplate.getForEntity("http://user-service/index",String.class).getBody();
     }
 }
